@@ -1,0 +1,813 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+
+  font-family:
+    Arial,
+    sans-serif;
+
+  color: #24435c;
+
+  background: #f8fbfd;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+header {
+
+  height: 82px;
+
+  background: #ffffff;
+
+  display: flex;
+
+  align-items: center;
+
+  padding: 0 6%;
+
+  gap: 28px;
+
+  position: sticky;
+
+  top: 0;
+
+  z-index: 10;
+
+  box-shadow:
+    0 4px 20px #31506b10;
+}
+
+
+/* LOGO */
+
+.logo {
+
+  font:
+    700 27px Georgia;
+
+  color: #5798d0;
+
+  line-height: .8;
+
+  margin-right: auto;
+}
+
+.logo span {
+
+  display: block;
+
+  font:
+    10px Arial;
+
+  letter-spacing: 4px;
+
+  color: #60778b;
+
+  margin-top: 7px;
+}
+
+
+/* MENU */
+
+.menu {
+
+  display: none;
+
+  border: 0;
+
+  background: none;
+
+  font-size: 25px;
+
+  cursor: pointer;
+}
+
+
+/* NAVIGATION */
+
+nav {
+
+  display: flex;
+
+  gap: 25px;
+
+  font-size: 13px;
+}
+
+nav a {
+
+  transition: .3s;
+}
+
+nav a:hover {
+
+  color: #e56f9b;
+}
+
+
+/* WHATSAPP */
+
+.wa {
+
+  background: #e56f9b;
+
+  color: #ffffff;
+
+  padding:
+    13px 22px;
+
+  border-radius: 28px;
+
+  font-weight: bold;
+
+  font-size: 13px;
+
+  transition: .3s;
+}
+
+.wa:hover {
+
+  transform:
+    translateY(-2px);
+
+  box-shadow:
+    0 8px 20px #e56f9b35;
+}
+
+
+/* =========================
+   GENERAL
+========================= */
+
+small {
+
+  color: #5798d0;
+
+  letter-spacing: 2px;
+
+  font-weight: bold;
+
+  font-size: 11px;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+
+  min-height: 560px;
+
+  padding:
+    55px 6%;
+
+  display: grid;
+
+  grid-template-columns:
+    1fr 1fr;
+
+  align-items: center;
+
+  background:
+    linear-gradient(
+      120deg,
+      #ffffff,
+      #edf6fc
+    );
+}
+
+
+/* HERO TEXT */
+
+.hero-text h1 {
+
+  font:
+    600 58px/1.08 Georgia;
+
+  margin:
+    16px 0;
+}
+
+.hero-text h1 i {
+
+  color: #e56f9b;
+
+  font-style: normal;
+}
+
+.hero-text p {
+
+  max-width: 500px;
+
+  color: #627788;
+
+  line-height: 1.8;
+
+  font-size: 15px;
+}
+
+
+/* BUTTON */
+
+.btn {
+
+  display: inline-block;
+
+  margin-top: 15px;
+
+  background: #5798d0;
+
+  color: #ffffff;
+
+  padding:
+    13px 22px;
+
+  border-radius: 28px;
+
+  font-weight: bold;
+
+  font-size: 13px;
+
+  transition: .3s;
+}
+
+.btn:hover {
+
+  transform:
+    translateY(-3px);
+
+  box-shadow:
+    0 10px 25px #5798d035;
+}
+
+
+/* HERO PRODUCT */
+
+.hero-art {
+
+  height: 450px;
+
+  display: flex;
+
+  align-items: end;
+
+  justify-content: center;
+
+  background:
+    #eef6fa;
+
+  border-radius: 28px;
+
+  overflow: hidden;
+}
+
+.hero-art img {
+
+  width: 48%;
+
+  max-height: 430px;
+
+  object-fit: contain;
+}
+
+
+/* =========================
+   BENEFITS
+========================= */
+
+.benefits {
+
+  margin:
+    0 5%;
+
+  padding: 25px;
+
+  background: #ffffff;
+
+  border-radius: 20px;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 15px;
+
+  box-shadow:
+    0 10px 30px #31506b0d;
+}
+
+.benefits div {
+
+  display: grid;
+
+  grid-template-columns:
+    42px 1fr;
+
+  column-gap: 10px;
+
+  align-items: center;
+}
+
+.benefits b {
+
+  grid-row:
+    span 2;
+
+  width: 42px;
+
+  height: 42px;
+
+  border-radius: 50%;
+
+  background: #edf7fd;
+
+  display: grid;
+
+  place-items: center;
+
+  color: #5798d0;
+}
+
+.benefits strong {
+
+  font-size: 13px;
+}
+
+.benefits p {
+
+  margin: 0;
+
+  color: #718493;
+
+  font-size: 11px;
+}
+
+
+/* =========================
+   SECTION
+========================= */
+
+section:not(.hero) {
+
+  padding:
+    75px 6%;
+}
+
+
+/* SECTION TITLE */
+
+.title {
+
+  text-align: center;
+
+  margin-bottom: 35px;
+}
+
+.title h2 {
+
+  font:
+    600 42px Georgia;
+
+  margin:
+    10px 0;
+}
+
+
+/* =========================
+   PRODUCTS
+========================= */
+
+.products {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 18px;
+}
+
+.products article {
+
+  background: #ffffff;
+
+  border:
+    1px solid #e3ebf0;
+
+  border-radius: 12px;
+
+  padding: 10px;
+
+  transition: .3s;
+}
+
+.products article:hover {
+
+  transform:
+    translateY(-6px);
+
+  box-shadow:
+    0 15px 30px #31506b12;
+}
+
+.products img {
+
+  width: 100%;
+
+  height: 250px;
+
+  object-fit: cover;
+
+  background: #f2f7fa;
+
+  border-radius: 8px;
+}
+
+.products h3 {
+
+  font:
+    600 17px Georgia;
+
+  margin:
+    14px 5px 4px;
+}
+
+.products p {
+
+  color: #e56f9b;
+
+  font-weight: bold;
+
+  font-size: 13px;
+
+  margin:
+    0 5px 10px;
+}
+
+.products button {
+
+  border:
+    1px solid #c7dfef;
+
+  background: #ffffff;
+
+  color: #5798d0;
+
+  border-radius: 20px;
+
+  padding:
+    8px 14px;
+
+  margin:
+    0 5px 5px;
+
+  cursor: pointer;
+
+  transition: .3s;
+}
+
+.products button:hover {
+
+  background: #5798d0;
+
+  color: white;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about {
+
+  display: grid;
+
+  grid-template-columns:
+    1fr 1fr;
+
+  gap: 55px;
+
+  align-items: center;
+
+  background: #ffffff;
+}
+
+.about-art {
+
+  height: 360px;
+
+  background: #eee7df;
+
+  border-radius: 16px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  overflow: hidden;
+}
+
+.about-art img {
+
+  width: 48%;
+
+  height: 100%;
+
+  object-fit: contain;
+}
+
+.about h2 {
+
+  font:
+    600 42px/1.15 Georgia;
+
+  margin:
+    12px 0;
+}
+
+.about p,
+.about li {
+
+  color: #627788;
+
+  line-height: 1.8;
+
+  font-size: 14px;
+}
+
+.about ul {
+
+  padding-left: 20px;
+}
+
+
+/* =========================
+   REVIEWS
+========================= */
+
+.reviews {
+
+  background: #f8fbfd;
+}
+
+.review-grid {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 18px;
+}
+
+.review-grid div {
+
+  background: #ffffff;
+
+  padding: 25px;
+
+  border-radius: 12px;
+
+  box-shadow:
+    0 8px 25px #31506b0b;
+}
+
+.review-grid span {
+
+  display: block;
+
+  color: #f2b31b;
+
+  margin:
+    8px 0;
+}
+
+.review-grid p {
+
+  font-size: 13px;
+
+  color: #627788;
+
+  line-height: 1.7;
+}
+
+
+/* =========================
+   CTA
+========================= */
+
+.cta {
+
+  margin:
+    0 6%
+    60px;
+
+  background: #5798d0;
+
+  color: #ffffff;
+
+  border-radius: 28px;
+
+  text-align: center;
+
+  padding:
+    55px 20px;
+}
+
+.cta small {
+
+  color: #eaf6ff;
+}
+
+.cta h2 {
+
+  font:
+    600 42px Georgia;
+
+  max-width: 650px;
+
+  margin:
+    12px auto 25px;
+
+  color: #ffffff;
+}
+
+.light {
+
+  background: #ffffff;
+
+  color: #5798d0;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+
+  padding:
+    35px 6%;
+
+  background: #ffffff;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  color: #5798d0;
+}
+
+footer p {
+
+  color: #718493;
+
+  font-size: 12px;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+  nav {
+
+    display: none;
+  }
+
+  .menu {
+
+    display: block;
+  }
+
+  .wa {
+
+    display: none;
+  }
+
+  .hero {
+
+    grid-template-columns: 1fr;
+  }
+
+  .hero-art {
+
+    margin-top: 30px;
+  }
+
+  .products {
+
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+  .benefits {
+
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+  .about {
+
+    grid-template-columns: 1fr;
+  }
+
+  .review-grid {
+
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+  header {
+
+    height: 72px;
+
+    padding:
+      0 6%;
+  }
+
+  .hero {
+
+    padding:
+      40px 6%;
+  }
+
+  .hero-text h1 {
+
+    font-size: 44px;
+  }
+
+  .hero-art {
+
+    height: 350px;
+  }
+
+  .products {
+
+    grid-template-columns: 1fr;
+  }
+
+  .benefits {
+
+    grid-template-columns: 1fr;
+  }
+
+  .about-art {
+
+    height: 300px;
+  }
+
+  section:not(.hero) {
+
+    padding:
+      60px 6%;
+  }
+
+  .cta {
+
+    margin:
+      0 6%
+      45px;
+  }
+
+  footer {
+
+    display: block;
+  }
+
+}
